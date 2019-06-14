@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <h1>calculator</h1>
+    <div>
+      <span *ngIf="num1!=0">{{ num1 }}</span>
+      <span *ngIf="num1!=0">{{ op }}</span>
+      <span *ngIf="num2!=0">{{ num2 }}</span>
+      <span *ngIf="res!=0">={{ res }}</span>
+    </div><br>
+    <table>
+      <tr>
+        <td><input type="button" value="1" (click)="add1($event)"></td>
+        <td><input type="button" value="2" (click)="add2($event)"></td>
+        <td><input type="button" value="3" (click)="add3($event)"></td>
+        <td><input type="button" value="+" (click)="plus($event)"></td>
+      </tr>
+      <tr>
+          <td><input type="button" value="4" (click)="add4($event)"></td>
+          <td><input type="button" value="5" (click)="add5($event)"></td>
+          <td><input type="button" value="6" (click)="add6($event)"></td>
+          <td><input type="button" value="-" (click)="minus($event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" (click)="add7($event)"></td>
+            <td><input type="button" value="8" (click)="add8($event)"></td>
+            <td><input type="button" value="9" (click)="add9($event)"></td>
+            <td><input type="button" value="*" (click)="mul($event)"></td>
+          </tr>
+          <tr>
+              <td><input type="button" value="c" (click)="clear($event)"></td>
+              <td><input type="button" value="0" (click)="add0($event)"></td>
+              <td><input type="button" value="=" (click)="equal($event)"></td>
+              <td><input type="button" value="/" (click)="div($event)"></td>
+            </tr>
+    </table>
+  </body>
+</html>
